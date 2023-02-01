@@ -1,0 +1,11 @@
+.header_container {
+    display: grid;
+    grid-template-columns: 40%  60%;
+    text-align: center;
+}
+
+.title {
+    padding-top: 12rem;
+    bottom: 3rem;
+    font-size: 6vw;
+}

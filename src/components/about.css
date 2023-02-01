@@ -1,0 +1,28 @@
+.about_container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1 fr 1 fr;
+    text-align: center;
+    margin: 8rem;
+    margin-top: 8rem;
+}
+
+.about_img{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.about_paragraph_1 {
+    margin-top: 3rem;
+    grid-column: 2 / 3;
+    grid-row: 1 /2;
+    font-size: 2.2vw;
+}
+
+.about_paragraph_2 {
+    font-size: 2vw;
+    color: gray;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+

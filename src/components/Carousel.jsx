@@ -1,0 +1,56 @@
+import React, { useState , useEffect } from 'react';
+import './Carrousel.css';
+import { HiOutlineChevronRight } from "react-icons/hi2";
+import { HiOutlineChevronLeft } from "react-icons/hi2";
+import carousel0 from '../assets/carousel0.jpeg';
+import carousel1 from '../assets/carousel1.jpeg';
+import carousel2 from '../assets/carousel2.jpeg';
+import carousel3 from '../assets/carousel3.jpeg';
+import carousel4 from '../assets/carousel4.jpeg';
+import carousel5 from '../assets/carousel5.jpeg';
+import carousel6 from '../assets/carousel6.jpeg';
+import carousel7 from '../assets/carousel7.jpeg';
+import carousel8 from '../assets/carousel8.jpeg';
+
+
+const images = [
+  carousel0,carousel1,carousel2,
+  carousel3,carousel4,carousel5,
+  carousel6,carousel7,carousel8
+]
+
+const interval = 4500;
+
+const Carousel = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => { 
+  const timer = setInterval(() => {
+    setIndex((index +1) % images.length)
+  }, interval);
+
+  return () => clearInterval(timer);
+}, [index , images.length]);
+
+
+  const handlePrevClick = () => {
+    setIndex((index + images.length -1) % images.length);
+  };
+
+  const handleNextClick = () => {
+    setIndex((index + 1) % images.length)
+  };
+      
+    return (
+    <div className='carrousel' >
+      <button onClick={handlePrevClick} className='prevButton'>  <HiOutlineChevronLeft/> </button>
+      <div className='carrousel_img'>
+        <img src={images[index]} alt='image' className='slide_img'/>
+      </div>
+      <button  onClick={handleNextClick} className= 'nextButton' > <HiOutlineChevronRight/> </button>
+    </div>
+    );
+};
+
+
+export default Carousel;

@@ -1,0 +1,21 @@
+.contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: blueviolet;
+    color: white;
+}
+
+.form_container{
+    font-size: 1.3rem;
+    margin: 8rem;
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap:12%;
+}
+
+.contact_title {
+    text-align: center;
+    margin-top: 5%;
+}
+
