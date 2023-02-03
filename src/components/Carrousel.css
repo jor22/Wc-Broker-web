@@ -2,11 +2,14 @@
     margin:5% 0% 5% 0%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
+    transition: all 0.5s ease-in-out;
 }
 
 
 .carrousel_img {
     height: auto;
+    z-index: 1;
+    transition: all 0.5s ease-in-out
 }
 
 .slide_img {
@@ -16,16 +19,18 @@
     border-radius: 3%;
     box-shadow: 5px 8px 12px  black;
 }
-.prevButton {
-    background-color: transparent;
-    color: blueviolet;
-    font-size: 6rem;
-    cursor:pointer
+
+
+.prev_img {
+    border-radius: 3%;
+    background: transparent;
+    cursor: pointer;
+    opacity: 0.5;
 }
 
-.nextButton {
-    background-color: transparent;
-    color:blueviolet;
-    font-size: 6rem;
+.next_img {
+    border-radius: 3%;
+    background: transparent;
     cursor: pointer;
+    opacity: 0.5;
 }

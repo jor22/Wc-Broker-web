@@ -12,6 +12,7 @@ const FAB = () => (
     height: '90px',
     display: 'flex',
     cursor: 'pointer',
+    zIndex:'1',
   }}>
     <img  src={whatsapp_logo} style={{ color: '#fff', fontSize: '36px' }} className="whatsapp_icon"></img>
   </a>

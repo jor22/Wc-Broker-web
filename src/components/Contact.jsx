@@ -11,12 +11,12 @@ const Contact = () => {
                     <h2 className="contact_title">Contactate con nosotros.</h2>
                 <div className="contact_option">
                     <article className="mail_options" >
-                        <MdMailOutline/>
+                        <MdMailOutline className="contact_icon"/>
                         <h4>Email</h4>
                         <a  target="_blank">wcbroker@gmail.com</a>
                     </article>
                     <article className="messenger_options" >
-                        <RiMessengerLine/>
+                        <RiMessengerLine className="contact_icon"/>
                         <h4>Messenger</h4>
                         <a  target="_blank">facebook:wcbroker</a>
                     </article>

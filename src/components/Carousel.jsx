@@ -1,7 +1,5 @@
 import React, { useState , useEffect } from 'react';
 import './Carrousel.css';
-import { HiOutlineChevronRight } from "react-icons/hi2";
-import { HiOutlineChevronLeft } from "react-icons/hi2";
 import carousel0 from '../assets/carousel0.jpeg';
 import carousel1 from '../assets/carousel1.jpeg';
 import carousel2 from '../assets/carousel2.jpeg';
@@ -19,7 +17,7 @@ const images = [
   carousel6,carousel7,carousel8
 ]
 
-const interval = 4500;
+const interval = 6000;
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
@@ -43,11 +41,15 @@ const Carousel = () => {
       
     return (
     <div className='carrousel' >
-      <button onClick={handlePrevClick} className='prevButton'>  <HiOutlineChevronLeft/> </button>
+      <button onClick={handlePrevClick} className='prev_img'> 
+        <img src={images[(index + images.length - 1) % images.length]} alt="prev" />
+      </button>
       <div className='carrousel_img'>
         <img src={images[index]} alt='image' className='slide_img'/>
       </div>
-      <button  onClick={handleNextClick} className= 'nextButton' > <HiOutlineChevronRight/> </button>
+      <button  onClick={handleNextClick} className= 'next_img' >
+        <img src={images[(index + 1) % images.length]} alt="next" />
+      </button>
     </div>
     );
 };
