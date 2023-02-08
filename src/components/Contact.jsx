@@ -13,20 +13,22 @@ const Contact = () => {
                     <article className="mail_options" >
                         <MdMailOutline className="contact_icon"/>
                         <h4>Email</h4>
-                        <a  target="_blank">wcbroker@gmail.com</a>
+                        <a  target="_blank">hola@wcbroker.com.ar</a>
                     </article>
                     <article className="messenger_options" >
                         <RiMessengerLine className="contact_icon"/>
                         <h4>Messenger</h4>
                         <a  target="_blank">facebook:wcbroker</a>
                     </article>
+
+                    
                 </div>
-                <from action="" className="form">
+                <form action="" className="form">
                     <input type="text" name="name" placeholder="Nombre Completo"  required/>
                     <input type="email" name ="email"  placeholder="Tu Email" required/>
                     <textarea name="messege" rows="7" placeholder="Tu Mensaje" ></textarea>
                     <button type="submit" className="btn">Enviar</button>
-                </from>
+                </form>
             </div>
             <div className="contact_img">
                 <img src = {contactImg} alt="img"></img>

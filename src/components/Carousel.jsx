@@ -17,26 +17,40 @@ const images = [
   carousel6,carousel7,carousel8
 ]
 
+const altImages = [
+  'Seguro de auto','Seguro de transporte','Seguros de vida',
+  'Seguros de moto','Seguros de bicicletas','Resposavilidad Civil',
+  'Seguros de Comercio','Seguro de accidentes Personales','Caución'
+]
+
 const interval = 6000;
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
+  const [timer, setTimer] = useState(null);
 
   useEffect(() => { 
-  const timer = setInterval(() => {
-    setIndex((index +1) % images.length)
-  }, interval);
-
-  return () => clearInterval(timer);
-}, [index , images.length]);
+    setTimer(setInterval(() => {
+      setIndex((index + 1) % images.length);
+    }, interval));
+    return () => clearInterval(timer);
+  }, [index, images.length]);
 
 
   const handlePrevClick = () => {
-    setIndex((index + images.length -1) % images.length);
+    clearInterval(timer);
+    setIndex((index + images.length - 1) % images.length);
+    setTimer(setInterval(() => {
+      setIndex((index + 1) % images.length);
+    }, interval));
   };
 
   const handleNextClick = () => {
-    setIndex((index + 1) % images.length)
+    clearInterval(timer);
+    setIndex((index + 1) % images.length);
+    setTimer(setInterval(() => {
+      setIndex((index + 1) % images.length);
+    }, interval));
   };
       
     return (
@@ -45,7 +59,7 @@ const Carousel = () => {
         <img src={images[(index + images.length - 1) % images.length]} alt="prev" />
       </button>
       <div className='carrousel_img'>
-        <img src={images[index]} alt='image' className='slide_img'/>
+        <img src={images[index]} alt={altImages[index]} className='slide_img'/>
       </div>
       <button  onClick={handleNextClick} className= 'next_img' >
         <img src={images[(index + 1) % images.length]} alt="next" />

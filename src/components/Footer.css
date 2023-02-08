@@ -1,0 +1,44 @@
+.footer {
+    background: rgba(96, 104 ,172);
+    padding:3rem;
+    text-align: center;
+    font-size: 0.9rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
+
+.footer a {
+    color: white;
+}
+
+.footer_logo {
+    width: 15rem;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.footer_info {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.footer_social a {
+    background: rgba(55,70,91);
+    color:white;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    border: 1px solid transparent;
+}

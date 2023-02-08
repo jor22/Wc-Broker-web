@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <>
             <div className="header_container">
-                <h1 className="title">Asegurate de disfrutar.</h1>
+                <h1 className="title">Asegurate de disfrutar</h1>
                 <div className="header_img">
-                    <img src={headerImg}  alt="header_img"/>
+                    <img src={headerImg}  alt="WcBroker"/>
                 </div>
             </div>
         </>

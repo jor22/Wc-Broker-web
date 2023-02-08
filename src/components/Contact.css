@@ -1,6 +1,6 @@
 .contact_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 0.8fr;
     background-color: blueviolet;
     color: white;
 }
@@ -14,7 +14,7 @@
 .form_container{
     font-size: 1.3rem;
     margin: 8rem;
-    width: 58%;
+    width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
@@ -63,10 +63,7 @@
     font-size: 1rem;
 }
 
-/* .form{
-    padding: 1.5rem;
-    gap:1.2rem;
-} */
+
 
 form {
     display: flex;
