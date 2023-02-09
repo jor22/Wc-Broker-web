@@ -31,6 +31,15 @@
 
 @media screen and (max-width: 1024px) {
 
+    .about_img{
+        min-width: 300px;
+    } 
+
+}
+
+/*================== MEDIA QUERIES (MOBILE LANDSCAPE ) ================ */
+
+@media screen and (max-width: 768px) {
     .about_container {
         grid-template-columns: 1fr;
     }
@@ -53,13 +62,6 @@
     }
 
 
-
-  
-}
-
-/*================== MEDIA QUERIES (MOBILE LANDSCAPE ) ================ */
-
-@media screen and (max-width: 768px) {
     .about_img{
         min-width: 300px;
     } 
@@ -68,6 +70,20 @@
 /*================== MEDIA QUERIES (SMALL DEVICES) ================ */
 
 @media screen and (max-width: 600px) {
+
+    .about_paragraph_1 {
+        padding: 1%;
+        font-size: 2.5vh;
+
+    }
+
+    .about_paragraph_2 {
+        margin-top: 5%;
+        font-size: 2.2vh;
+    }
+
+
+    
     .about_img{
         min-width: 200px;
     } 

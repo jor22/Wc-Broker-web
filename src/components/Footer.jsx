@@ -13,7 +13,7 @@ const Footer = () => {
 
             <ul className="footer_info">
                 <li>+54123456789</li>
-                <li>wcbroker@gmail.com</li>
+                <li>hola@wcbroker.com.ar</li>
             </ul>
 
             <div className="footer_social">
