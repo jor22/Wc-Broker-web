@@ -3,6 +3,7 @@ import './Contact.css';
 import contactImg from '../assets/img884.png'
 import {MdMailOutline} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
     const form = useRef()
@@ -15,7 +16,9 @@ const Contact = () => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
-          });
+        });
+        
+        e.target.reset()
     };
     
     return (
