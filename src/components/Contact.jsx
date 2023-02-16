@@ -4,21 +4,33 @@ import contactImg from '../assets/img884.png'
 import {MdMailOutline} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
 import emailjs from 'emailjs-com'
+import Swal from "sweetalert2";
 
 const Contact = () => {
     const form = useRef()
 
+    const showAlert =() => {
+        Swal.fire({
+            title:'Tu Mensaje fue enviado con exito',
+            text: 'A la brevedad nos comunicaremos con usted',
+            icon:'success',
+            timer: 3000
+        })
+    }
+
     const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_oxou788', 'template_q4s2zn8', form.current, 'jzM_4bd6xZPY82jXp')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
               console.log(error.text);
         });
         
-        e.target.reset()
+        e.target.reset();
+
+        showAlert();
     };
     
     return (
@@ -34,7 +46,7 @@ const Contact = () => {
                     <article className="messenger_options" >
                         <RiMessengerLine className="contact_icon"/>
                         <h4>Messenger</h4>
-                        <a  href="https://m.me/jorgeariel.castillo.5">facebook: wcbroker</a>
+                        <a  href="https://m.me/wcbroker.ok">facebook: wcbroker</a>
                     </article>
 
                 </div>

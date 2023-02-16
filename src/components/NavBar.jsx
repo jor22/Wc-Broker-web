@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <div className="nav_container">
             <div className="Logo">
-            <img src={Logo}   alt="Logo"/>
+            <img src={Logo}   alt="WcBroker"/>
             </div>
         </div>
     )

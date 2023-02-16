@@ -12,13 +12,13 @@ const Footer = () => {
             </div>
 
             <ul className="footer_info">
-                <li>+54123456789</li>
+                <li>+541123667415</li>
                 <li>hola@wcbroker.com.ar</li>
             </ul>
 
             <div className="footer_social">
-                <a href="https://facebook.com"><FaFacebookF/></a>
-                <a href="https://instagram.com"><FiInstagram/></a>
+                <a href="https://www.facebook.com/wcbroker.ok/"><FaFacebookF/></a>
+                <a href="https://www.instagram.com/wcbroker.ok/"><FiInstagram/></a>
             </div>
 
             <div className="footer_copyright">
