@@ -197,6 +197,9 @@ input::-webkit-input-placeholder {
 /*================== MEDIA QUERIES (SMALL DEVICES) ================ */
 
 @media screen and (max-width: 600px) {
+  .contact_title{
+    font-size: 1.5rem
+  }
 
   .contact_container {
     padding: 2rem;
@@ -204,6 +207,20 @@ input::-webkit-input-placeholder {
 
   .form_container{
     margin: 4rem;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+
+ .contact_container {
+    padding: 3rem;
+  }
+
+  .form_container{
+    margin: 2.2rem;
   }
 
 }

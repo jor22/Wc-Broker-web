@@ -23,7 +23,7 @@ const altImages = [
   'Seguros de Comercio','Seguro de accidentes Personales','Caución'
 ]
 
-const interval = 6000;
+const interval = 4000;
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
