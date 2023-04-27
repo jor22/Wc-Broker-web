@@ -52,9 +52,37 @@ const Carousel = () => {
       setIndex((index + 1) % images.length);
     }, interval));
   };
-      
+
+
+  const handleTouchStart = (e) => {
+    const startX = e.touches[0].clientX;
+    setStartX(startX);
+  };
+
+  const handleTouchMove = (e) => {
+    if (!startX) return;
+    const endX = e.touches[0].clientX;
+    const diffX = endX - startX;
+    if (Math.abs(diffX) > 50) {
+      setStartX(null);
+      if (diffX > 0) {
+        handlePrevClick();
+      } else {
+        handleNextClick();
+      }
+    }
+  };
+
+  const handleTouchEnd = () => {
+    setStartX(null);
+  };
+
     return (
-    <div className='carrousel' >
+    <div className='carrousel' 
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <button onClick={handlePrevClick} className='prev_img'> 
         <img src={images[(index + images.length - 1) % images.length]} alt="prev" />
       </button>

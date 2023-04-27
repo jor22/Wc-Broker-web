@@ -44,6 +44,7 @@
     grid-column: 1 / 2;
 }
 .mail_options {
+    color: #ffffff;
     background-color: rgba(96, 104 ,172);
     text-align: center;
     padding: 1.2rem;
@@ -53,12 +54,13 @@
 }
 
 .mail_options:hover{
-  background: transparent;
+  background: rgba(55,70,91);
   border-color: rgba(96, 104 ,172);
 }
 
 
 .messenger_options {
+    color: #ffffff;
     background-color: rgba(96, 104 ,172);
     text-align: center;
     padding: 1.2rem;
@@ -68,7 +70,7 @@
 }
 
 .messenger_options:hover{
-  background: transparent;
+  background: rgba(55,70,91);
   border-color: rgba(96, 104 ,172);
 }
 

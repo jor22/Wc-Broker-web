@@ -38,16 +38,16 @@ const Contact = () => {
             <div className="form_container">
                     <h2 className="contact_title">Contactate con nosotros.</h2>
                 <div className="contact_option">
-                    <article className="mail_options" >
+                    <a className="mail_options"  href="mailto:hola@wcbroker.com.ar">
                         <MdMailOutline className="contact_icon"/>
                         <h4>Email</h4>
-                        <a href="mailto:hola@wcbroker.com.ar">hola@wcbroker.com.ar</a>
-                    </article>
-                    <article className="messenger_options" >
+                        <h5>hola@wcbroker.com.ar</h5>
+                    </a >
+                    <a className="messenger_options"  href="https://m.me/wcbroker.ok">
                         <RiMessengerLine className="contact_icon"/>
                         <h4>Messenger</h4>
-                        <a  href="https://m.me/wcbroker.ok">facebook: wcbroker</a>
-                    </article>
+                        <h5>facebook: wcbroker</h5>
+                    </a>
 
                 </div>
                 <form ref={form}  onSubmit={sendEmail} className="form">
