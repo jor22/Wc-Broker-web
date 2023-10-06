@@ -1,42 +1,12 @@
 .header_container {
-    display: grid;
-    grid-template-columns: 40%  60%;
-    text-align: center;
+  color: white;
 }
-
-.title {
-    padding-top: 12rem;
-    bottom: 3rem;
-    font-size: 6vw;
-}
-
 
 /* ================== MEDIA QUERIES (MEDIUM DEVICES) ================ */
 
-@media screen and (max-width: 1024px) {  
-    .title {
-        padding-top: 9rem;
-        bottom: 2rem;
-        font-size: 6vw;
-    }
+@media screen and (max-width: 1024px) {
 }
 
 /*================== MEDIA QUERIES (MOBILE LANDSCAPE ) ================ */
 
-@media screen and (max-width: 768px) {
-    .title {
-        padding-top: 7rem;
-        bottom: 1.2rem;
-        font-size: 6vw;
-    }
-}
-
 /*================== MEDIA QUERIES (SMALL DEVICES) ================ */
-
-@media screen and (max-width: 600px) {
-    .title {
-        padding-top: 5rem;
-        bottom: 1rem;
-        font-size: 7vw;
-    }
-}

@@ -1,0 +1,58 @@
+.panel_container {
+  padding: 2rem;
+  display: grid;
+  text-align: center;
+  color: rgb(82, 82, 82);
+}
+
+h3 {
+  color: #535353;
+}
+
+.Buttons_container {
+  padding: 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5%;
+}
+
+.Button_container {
+  padding: 1em;
+  height: 24vh;
+  width: 26vw;
+  display: flex;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Button_text {
+  align-items: start;
+  font-size: 1.3em;
+  width: 16vw;
+}
+
+.blue_text {
+  color: #4f4d9b;
+  font-size: 1.6em;
+}
+
+.ButtonLogo_img {
+  height: 12vh;
+  width: 12vw;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+.vermas {
+  color: rgb(238, 238, 0);
+  font-size: 0.7em;
+  font-weight: 1;
+}

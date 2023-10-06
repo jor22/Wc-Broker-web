@@ -1,15 +1,36 @@
 .Logo {
-    max-width: 20%;
+  max-width: 12%;
+  margin: 2rem;
 }
 
 .nav_container {
-    margin-bottom: -8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+}
+
+.a {
+  color: rgb(175, 175, 175);
+  cursor: pointer;
+}
+
+.a:hover {
+  color: rgb(30, 0, 99);
+}
+
+.nav_container .Menu_container {
+  display: flex;
+  gap: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 600px) {
-
-    .Logo {
-        max-width: 30%;
-    }
-  
+  .Logo {
+    max-width: 30%;
   }
+}

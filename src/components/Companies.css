@@ -1,0 +1,10 @@
+.Companies_container {
+  margin-top: 0;
+  background-color: #1f1e41;
+  display: flex;
+}
+
+.icon {
+  height: 12vh;
+  width: 12vw;
+}
