@@ -15,12 +15,12 @@ function Buttons() {
     setButtonPressed(buttonNumber);
 
     const urls = {
-      1: "https://www.google.com",
-      2: "https://www.youtube.com",
-      3: "https://www.facebook.com",
-      4: "https://www.instagram.com",
-      5: "https://www.google.com",
-      6: "https://www.youtube.com",
+      1: "https://www.sancristobal.com.ar/pas/wcseguros/seguro-hogar ",
+      2: "https://docs.google.com/forms/d/e/1FAIpQLSfSi3FXgtIZ-ImojmbFTGHQc17w4ahxKV08s6j7sooDAXrS9w/viewform?usp=sf_link",
+      3: "https://motos.rus.com.ar/13052",
+      4: "https://www.sancristobal.com.ar/pas/wcseguros/cotizar",
+      5: "https://docs.google.com/forms/d/e/1FAIpQLSdP2xxfsLft67DxlgaAeCQD_3KDq6ttiTxn7M-jc0tLiKg1yA/viewform?usp=sf_link",
+      6: "https://docs.google.com/forms/d/e/1FAIpQLSd1R35Z3X3ZR_mmpsPWUah-m7PyhT9EZL0Q2dhdJ3zJqgv4Fw/viewform?usp=sf_link",
     };
 
     if (urls[buttonNumber]) {

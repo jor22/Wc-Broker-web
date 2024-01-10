@@ -5,7 +5,7 @@ import bbva from "../assets/Companias/bbva.png";
 import expert from "../assets/Companias/expert.png";
 import federacion from "../assets/Companias/federacion.png";
 import galeno from "../assets/Companias/galeno.png";
-import hdi from "../assets/Companias/hdi .png";
+import hdi from "../assets/Companias/hdi.png";
 import lacaja from "../assets/Companias/la caja.png";
 import segunda from "../assets/Companias/la segunda.png";
 import mapfre from "../assets/Companias/mapfre.png";
@@ -13,7 +13,7 @@ import mercantil from "../assets/Companias/mercantil andina.png";
 import meridional from "../assets/Companias/meridional.png";
 import rus from "../assets/Companias/rus.png";
 import sancristobal from "../assets/Companias/san cristobal.png";
-import sancor from "../assets/Companias/sancor .png";
+import sancor from "../assets/Companias/sancor.png";
 import smg from "../assets/Companias/smg.png";
 
 const Companies = () => {
